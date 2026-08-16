@@ -23,7 +23,6 @@ rum =Solution()
 print(rum.whileLoop(9))
 
 
-import time
 
 class Solution:
     def whileLoop(self, d: int) -> int:
