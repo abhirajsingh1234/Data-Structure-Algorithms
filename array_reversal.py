@@ -20,6 +20,7 @@ class Solution:
         start_time = datetime.datetime.now()
         arr.reverse()
         print(arr)
+        
         end_time = datetime.datetime.now()
         print(f"Execution time: {end_time - start_time}")
 
