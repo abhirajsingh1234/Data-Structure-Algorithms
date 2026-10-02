@@ -1,13 +1,21 @@
 class Solution:
 	def maxProduct(self, arr):
 		# code here
-		new_maximum = arr[0]
-		new_minimum = arr[0]
-		result = arr[0]
-		for i in range(1,arr):
-			x=arr[i]
-			if x<0:
-				new_maximum,new_minimum = new_minimum,new_maximum
+		maximum = arr[0]
+		suff_product = 1
+		prefix_product = 1
+		arr_length = len(arr)
+		for i in range(arr_length):
+			prefix_product = prefix_product * arr[i]
+			suff_product = suff_product * arr[arr_length - 1 - i]
+			maximum = max(maximum, prefix_product)
+			maximum = max(maximum, suff_product)
+			if prefix_product == 0:
+				prefix_product = 1
+			if suff_product == 0:
+				suff_product = 1
+		return maximum
+
 
 			 
 		
