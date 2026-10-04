@@ -26,6 +26,7 @@
 
 ##boyer moore voting algorithm
 
+
 class Solution:
     def majorityElement(self, arr):
         
@@ -56,3 +57,4 @@ class Solution:
 
 obj = Solution()
 print(obj.majorityElement([2, 1, 2, 1, 5, 1, 3]))
+
