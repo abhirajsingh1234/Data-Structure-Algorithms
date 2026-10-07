@@ -8,6 +8,7 @@ class Solution:
         for i in range(len(arr)):
             n3=arr[i]
             if n1 is None or n3<=n1:
+                #storing all occurance of n1
                 n1_counter['1'][i] = n3
 
                 n1=n3
@@ -15,6 +16,7 @@ class Solution:
                 n2_counter =i
                 n2=n3
             else:
+                #finding the n1 value having index less than n2
                 for k,v in n1_counter['1'].items():
                     print(f"{k}>{n2_counter}")
                     if k>n2_counter:
