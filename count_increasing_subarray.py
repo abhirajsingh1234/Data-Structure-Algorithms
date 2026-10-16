@@ -33,3 +33,4 @@ print(obj.countIncreasing([1,2,1,4,5,6]))
 # Solution :- split array on basis (i>=i+1 )
 #             for each subarray get subarray count using - (n-1)((n-1)+1)/2
 #             sum up each splitted array count and that is the answer
+#
