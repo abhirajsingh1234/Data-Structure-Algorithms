@@ -1,12 +1,11 @@
 class Solution:
     def canPairs(self, arr, k):
-        
         # If the array length is odd, it's impossible to pair up all elements
         if len(arr) % 2 != 0:
             return False
             
         remainder_count = {}
-        
+         
         # Count the frequency of each remainder
         for num in arr:
             rem = num % k
